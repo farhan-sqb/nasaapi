@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NASA's APOD API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="callAPI();">
+
+    <div class="grid-container">
+        <div class="item1">
+            NASA's APOD API
+        </div>
+        
+
+        <div class="item3">
+            <div>
+                <input type="button" id="btnDay" value="Set To Show Day Name" onclick="setStorage(1);" />
+                <input type="button" id="btnMonth" value="Set To Show Month Name" onclick="setStorage(2);" />
+            </div>
+            <div>
+                <input type="button" id="btnDay" value="Set To Show Default Date" onclick="setDateStorage(1);" />
+                <input type="button" id="btnMonth" value="Set To Show Date like YYYY-MM-DD" onclick="setDateStorage(2);" />
+            </div>
+            <div class="container">
+                <img id="potd" src="" style="width:100%;">
+                <div class="top-left" id="topLeft"></div>
+                <div class="top-left1" id="topLeft1"></div>
+                <div class="top-right" id="topRight"><input type="button" id="btnMore" value="More Info" onclick="showDetails();" /></div>
+            </div> 
+        </div>  
+        
+
+        <div class="item5">
+            @&nbsp;2021
+        </div>
+    </div>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
