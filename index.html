@@ -3,10 +3,10 @@
 <head>
     <title>NASA's APOD API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=1" />
 </head>
 
-<body onload="callAPI();">
+<body>
 
     <div class="grid-container">
         <div class="item1">
@@ -15,19 +15,43 @@
         
 
         <div class="item3">
-            <div>
-                <input type="button" id="btnDay" value="Set To Show Day Name" onclick="setStorage(1);" />
-                <input type="button" id="btnMonth" value="Set To Show Month Name" onclick="setStorage(2);" />
+            
+            <div id="settings">
+                <input type="button" id="btnSettings" class="button" value="Settings" />
             </div>
-            <div>
-                <input type="button" id="btnDay" value="Set To Show Default Date" onclick="setDateStorage(1);" />
-                <input type="button" id="btnMonth" value="Set To Show Date like YYYY-MM-DD" onclick="setDateStorage(2);" />
+
+            <div id="pref_1">
+                 Set Color:- 
+                 <input type="radio" name="setColor" value="red" />Red
+                 <input type="radio" name="setColor" value="green" />Green
+                 <input type="radio" name="setColor" value="white" checked />White   
             </div>
+
+            <div id="pref_2">
+                Set Clock:- 
+                <input type="radio" name="setClock" value="Show Seconds" checked />Show Seconds
+                <input type="radio" name="setClock" value="Hide Seconds" />Hide Seconds
+           </div>
+
+           <div id="pref_3">
+                <input type="button" id="btnSave" class="button" value="Save" />
+           </div>
+
             <div class="container">
                 <img id="potd" src="" style="width:100%;">
                 <div class="top-left" id="topLeft"></div>
                 <div class="top-left1" id="topLeft1"></div>
-                <div class="top-right" id="topRight"><input type="button" id="btnMore" value="More Info" onclick="showDetails();" /></div>
+                <div class="top-right" id="topRight"><input type="button" id="btnMore" class="button" value="More Info" /></div>
+            
+                <div id="greetings"></div>
+                <div id="clockSeconds"></div>
+                <div id="clockwithoutSeconds"></div>
+
+                <div id="moreItems">
+                    <div id="dayofWeek">1</div>
+                    <div id="dayofMonth">2</div>
+                    <div id="dayofYear">3</div>
+                </div>
             </div> 
         </div>  
         

@@ -40,21 +40,47 @@
     text-align: center;
     color: white;
   }
-  
+
+#greetings{
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  font-size: 40px;
+}  
+#clockSeconds {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  font-size: 40px;
+}
+#clockwithoutSeconds {
+  position: absolute;
+  top: 20%;
+  left: 1%;
+  font-size: 40px;
+  display: none;
+} 
+#moreItems{
+  position: absolute;
+  top: 10%;
+  right: 1%;
+  display: none;
+} 
 .top-left {
-position: absolute;
-top: 8px;
-left: 16px;
+  position: absolute; 
+  top: 1%;    
+  left: 1%;
 }
-
-.top-left1 {
-position: absolute;
-top: 75px;
-left: 16px;
-}
-
 .top-right {
-position: absolute;
-top: 8px;
-right: 16px;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.button{
+  width: 100px;
+}
+
+#pref_1, #pref_2, #pref_3{
+  display: none;
 }
